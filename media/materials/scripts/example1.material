@@ -1,0 +1,26 @@
+
+material example1
+{
+  technique
+  {
+    pass
+    {
+	  cull_hardware none
+	  cull_software none
+      polygon_mode_overrideable false
+	
+	  vertex_program ref myVertexShader
+	  {
+	  }
+			
+      fragment_program_ref myFragmentShader
+      {
+      }
+
+      texture_unit 
+      {
+        texture RttTex
+      }
+    }
+  }
+}

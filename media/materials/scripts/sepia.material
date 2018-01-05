@@ -1,0 +1,46 @@
+vertex_program VP_Sepia cg
+{
+	source sepia.cg
+	entry_point VS_Sepia
+	profiles vs_1_1 arbvp1
+}
+
+fragment_program FP_Sepia cg
+{
+	source sepia.cg
+	entry_point FS_Sepia
+	profiles ps_2_0 arbfp1
+}
+
+material sepia
+{
+	technique
+	{
+		
+		pass
+		{
+			cull_software none
+			cull_hardware none
+			depth_write off
+			depth_check off
+
+			vertex_program_ref VP_Sepia
+			{
+				param_named_auto g_worldViewProj worldviewproj_matrix
+			}
+
+			fragment_program_ref FP_Sepia
+			{
+				param_named Desat float 0.5
+				param_named Toned float 1.0
+				param_named LightColor float3 1.0 0.9 0.5
+				param_named DarkColor float3 0.2 0.05 0.0
+			}
+
+			texture_unit
+			{
+				texture RttTex
+			}	 	
+		}
+	}
+}

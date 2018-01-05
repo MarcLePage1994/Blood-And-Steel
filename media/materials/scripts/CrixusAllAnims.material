@@ -1,0 +1,24 @@
+material CrixusBaseNoRig_pasted__DefaultFBXASC032Material
+{
+	technique
+	{
+		pass
+		{
+			shading phong
+			ambient 0.2 0.2 0.2 1
+			diffuse 1 1 1 1
+			specular 0.2 0.29 0.32 6.9504
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture crixusTex.png
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}

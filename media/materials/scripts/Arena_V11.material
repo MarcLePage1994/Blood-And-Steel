@@ -1,0 +1,502 @@
+material Ground_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture ground2.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 0.1 0.1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Platform
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture black_marble.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Pit_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture stone.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Rock_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture rock.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Column_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture StandingColumnTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material small_column_Tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture column1.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Gate_tex1
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture gate.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material torch_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture gate.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Stand_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture gate.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Rack_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 0.5 0.5 0.5 1
+			specular 0 0 0 1
+			emissive 0 0 0
+		}
+	}
+}
+material Shield_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			scene_blend alpha_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture sheild_texture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Sword_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			scene_blend alpha_blend
+			depth_write off
+
+			texture_unit
+			{
+				texture sword_texture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Gladius_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture swordTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Javelin_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture spearTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Bow_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture Bow_Diffuse.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Quiver
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture spearTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Trident_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture trident_diffuse.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Arena_tex1
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture arena_tex3.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material pasted__blinn1
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0.5 0.5 0.5 89.6
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture Arch1Texture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material wallTorch_blinn1
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0.5 0.5 0.5 89.6
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture wallTorchTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material wallTorch1_blinn1
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0.5 0.5 0.5 89.6
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture wallTorchTexture.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
+material Arrow_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.75 0.75 0.75 1
+			diffuse 1 1 1 1
+			specular 0 0 0 1
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture Arrow_diffuse.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+//vertex_program myVertexShader glsl
+//{
+	//source example_v.glsl
+//}
+
+fragment_program myFragmentShader glsl
+{
+  source MyToneMapping_f.glsl
+}
+
+fragment_program myFragmentShader1 glsl
+{
+  source MyBlur_f.glsl
+}
+
+material MyHDR
+{
+  technique
+  {
+    pass Bloom
+    {
+	  cull_hardware none
+	  cull_software none
+      polygon_mode_overrideable false
+	
+	  //vertex_program_ref myVertexShader
+	  //{
+		//param_named_auto worldViewProj worldviewproj_matrix
+	  //}
+			
+      fragment_program_ref myFragmentShader
+      {
+		param_named inRTT int 0
+      }
+
+      texture_unit 
+      {
+        texture RttTex 2d
+      }
+    }
+	pass Blur
+    {
+	  cull_hardware none
+	  cull_software none
+      polygon_mode_overrideable false
+			
+      fragment_program_ref myFragmentShader1
+      {
+		param_named inRTT int 0
+      }
+
+      texture_unit 
+      {
+        texture RttTex 2d
+      }
+    }
+  }
+}
+
